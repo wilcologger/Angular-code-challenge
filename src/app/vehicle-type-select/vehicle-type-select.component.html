@@ -1,0 +1,11 @@
+<select
+  class="block w-full mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+  name="vehicle-type"
+  #vehicleTypes
+  (change)="onSelected(vehicleTypes.value)"
+>
+  <option default>Auto</option>
+  <option>Motor</option>
+  <option>Scooter</option>
+</select>
+<div class="text-red-700">{{ selectedVehicleType }}</div>
